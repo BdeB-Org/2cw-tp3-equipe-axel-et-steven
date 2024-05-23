@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
 
 header {
-    width: 100%; /* Ajustez selon vos besoins */
-    background-color: #8B0000; 
+    width: 100%;
+    background-color: #8B0000;
     position: fixed;
     top: 0;
     left: 0;
@@ -77,6 +78,7 @@ main {
     padding-top: 80px;
     flex-grow: 1;
 }
+
 .header-container {
     display: flex;
     align-items: center;
@@ -88,17 +90,17 @@ main {
 }
 
 .logo {
-    flex: 1; /* Pour pousser le logo à gauche */
+    flex: 1;
 }
 
 .search-bar {
-    flex: 2; /* Pour pousser la barre de recherche au milieu */
+    flex: 2;
     display: flex;
     justify-content: center;
 }
 
 .cart {
-    flex: 1; /* Pour pousser le panier à droite */
+    flex: 1;
     display: flex;
     justify-content: flex-end;
 }
@@ -121,4 +123,55 @@ main {
 
 .product-price {
     font-weight: bold;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.panel {
+    min-width: 80vw;
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.nav-btn:focus {
+    outline: none;
+}
+
+.nav-btn:active {
+    background-color: #0056b3;
 }
